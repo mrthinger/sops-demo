@@ -1,0 +1,8 @@
+age-encrypt:
+    age -R ./DEVS.txt ./.env.local > .env.local.age
+
+age-decrypt-evan:
+    age -d -i evankp.txt .env.local.age > evan.env.local
+
+age-decrypt-quentin:
+    age -d -i qntkp.txt .env.local.age > quentin.env.local
