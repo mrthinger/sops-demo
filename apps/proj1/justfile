@@ -1,0 +1,8 @@
+decrypt-env-local:
+    sops --decrypt sops.env > .env.local
+
+edit-env-local:
+    EDITOR='cursor --wait' sops edit sops.env
+
+encrypt-env-local:
+    sops --encrypt --input-type dotenv --output-type dotenv .env.local > sops.env
