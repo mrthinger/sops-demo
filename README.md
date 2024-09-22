@@ -21,3 +21,8 @@ shows a minimal example of how secrets could be managed between a team in git
   ```
 
 - `.sops.yaml` is at the repo root is used even while in `apps/` subdirectories
+
+## next steps
+
+- set a different config in .sops.yaml for different paths / envs for flux
+- sops/age + flux docs: https://fluxcd.io/flux/guides/mozilla-sops/#encrypting-secrets-using-age
